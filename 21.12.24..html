@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<title>21.12.24.공부</title>
+<meta charset="utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PZ70CBPHQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PZ70CBPHQ8');
+</script>
+</head>
+
+
+<body>
+
+<h2>HTML강의</h2>
+
+<h3>2021. 12. 24.</h3>
+<br>
+<p><h4>태그 기본</h4>
+  굵은 글씨는 <strong>strong</strong>이고, 밑줄은 <u>u</u>이다.<br>
+  뒤의 태그와 앞의 태그는 뒤의 것을 /를 붙임으로써 구별한다.<br>
+  h1은 제목을 나타내는 태그. h1부터 h6까지 있다.
+</p> <br>
+
+<p><h4>통계에 기반한 학습</h4>
+  21년 기준 36개의 태그로 된 웹사이트가 제일 많다.<br>
+  가장 많이 쓰인 태그는 head,html 태그이다(100%).<br>
+  그 다음이 body, title, meta, h1~6등등.
+</p> <br>
+
+<p><h4>줄바꿈, 단락 태그</h4>
+  <strong>br</strong>태그가 줄바꿈 태그이다. <br>
+  두번 겹쳐 쓰면 단락을 나눈 것 처럼 보임.<br>
+  br태그는 닫는 태그가 필요 없다.<br>
+  단락을 바꾸는 태그(html paragraph tag)는 <strong>p</strong>이다.<br>
+  br태그는 반복해서 계속 사용할 수 있지만 p태그는 여백의 크기가 정해져 있어 <br>
+  시각적인 자유로움이 떨어질 수 있다. 이를 css로 보완할 수 있다.<br>
+  p style="margin-top:45px"과 같이 입력하면 태그 간 40픽셀만큼 떨어진다.
+</p> <br>
+
+<p><h4>HTML의 중요성</h4>
+  같은 단어라도 코딩 할 때 <u> h태그로 감싸져 있는 것과, <br>
+  시각적으로(css 등) 글씨가 제목처럼 보이는 것</u>은 검색엔진에서 노출될 때 <br>
+  우선순위에서 확연히 차이가 난다.<br>
+  예를 들어 포토샵으로 만들어낸 글씨같은 이미지는 10년 후 검색될 가능적이 거의 없다.<br>
+  이런 비즈니스적인 측면 뿐만 아니라 시각장애인분들의 입장에서도 텍스트로 저장된 정보와 <br>
+  이미지나 일반적인 글씨를 제목처럼 보이게끔 하는 것은 정보로 인식할 수 없으므로 큰 차이다.
+</p> <br>
+
+<p><h4>최후의 문법 속성과 이미지</h4>
+  이미지를 넣을 때 쓰는 태그는 img이다. 그냥 단순히 'img'라고만 치면 당연히 안보인다. source가 없으므로. <br>
+  태그 문법을 만든 컴퓨터 전문가들은 태그 이름만으로는 정보가 부족하다는 것을 인식, 새 문법 만듬 <br>
+  바로 src(source)이다. 여기에 원하는 이미지의 주소를 적어준다. Unsplash.com이라는 사이트 추천. <br>
+  이미지가 저작권이 없는 사이트다. 다운 후 같은 파일에 넣고, 파일 이름을 src에 적어준다.<br>
+  width로 크기 조정이 가능하다(200, 100% 등). <br>
+  속성(width, src 등)들은 순서는 상관이 없다. <br>
+  <img src="coding.jfif" width="200" alt="">
+</p> <br>
+
+<p><h4>부모 자식 태그</h4>
+  목차를 만들 때 사용하라고 만든 태그가 있는데, 바로 <strong>li</strong>이다. <br>
+  또, <strong>li</strong> 태그의 부모인 <strong>ul</strong>태그가 있다. ul태그는 li와 같은 항목들을 경계를 지어준다. <br>
+  어디까지가 하나의 목록인지를 구분해준다. 그래서 ul은 li와 항상 같이 있어야한다.  <br>
+  만약 리스트 목록에 숫자를 써 주어야 한다면 일일히 쓰기 어렵다. <br>
+  이 때 사용하는 태그는 <strong>ol</strong>태그다.<br>
+  <ol>
+    <li>HTML</li>
+    <li>Python</li>
+    <li>R</li>
+  </ol>
+  다음 처럼 된다. li는 list, ul은 unordered list, ol은 ordered list이다.
+</p> <br>
+
+</body>
+</html>
