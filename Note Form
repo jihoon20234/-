@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>22.01.공부</title>
+<meta charset="utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PZ70CBPHQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PZ70CBPHQ8');
+</script>
+</head>
+
+
+<body>
+
+<h2>Python강의</h2>
+
+<h3>2022. 01. .</h3>
+<br>
+
+<p> <h4> </h4>
+ 
+</p> <br>
+
+
+
+</p> <br>
+
+
+
+</body>
+</html>
