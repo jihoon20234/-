@@ -44,12 +44,19 @@
 	- 리스트와 문자열: 구조가 거의 유사하기 때문에, 리스트와 문자열은 서로 바꾸기 쉽다. <br>
 	  문장을 리스트로 바꿀 때는 문장.split(“ “)를 이용하면 쌍따옴표 안의 데이터를 기준으로 리스트화 된다(separator). 
 	  또 리스트를 string으로 바꿀 때는 join을 사용한다(“ “.join(리스트)). 	<br>
-       	  이것 또한 기준자를 이용해 합치는 사이에 공백과 같이 원하는 데이터를 넣을 수 있다.<br	
+       	  이것 또한 기준자를 이용해 합치는 사이에 공백과 같이 원하는 데이터를 넣을 수 있다.<br>	
 
-</p> <br>
+</p> <br> 
 
 
-</p> <h4> </h4>
+<p> <h4>3) Dictionary</h4>
+	List가 Excel에서 column이었다면, Dictionary는 row. 2행 n열로 구성된다. <br>
+	데이터마다 속성명이 있어서 데이터를 찾아가기 위해서는 속성명(key 값)을 이용해 접근하면 된다. <br>
+	- dictionary 정의: 하나의 keyr값과 value값을 세트로 해서 가운데에 :를 넣고, 중괄호로 감싸면 된다.<br>
+	List와 마찬가지로 데이터에는 어떤 것이 와도 상관이 없다. 다만, 하나의 dictionary에는 하나의 주제(ex, 사람에 대한 정보, 물건의 정보 등)에 대한 정보만 담을 것!<br> 
+	- dictionary 호출: joe라는 dict이 있을 때, 속성에 대한 값을 알고 싶을 때는 dict_joe[‘name’]과 같이 사용하면 된다. <br>
+ 	또 joe에 대한 정보를 바꿀 때는 dict_joe[‘부서’=’마케팅’]과 같이 dictionary를 바꿔준다. <br>
+	key값들을 알고 싶을 때는 dict_joe.keys(), value값은 dict_joe.values()라고 입력하면 된다. 쌍으로 알고 싶으면 dict_joe.items()라고 치면 한 쌍으로 dict전체가 나온다.<br>
 
 </p> <br>
 
