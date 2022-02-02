@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<title>파이썬공부</title>
+<meta charset="utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PZ70CBPHQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PZ70CBPHQ8');
+</script>
+</head>
+
+
+<body>
+<h3>2022. 02. 01.</h3> 
+
+<h2>Conditional&Loop</h2>
+
+<br>
+<strong>-코드 제어의 3가지 구조</strong>
+: 순차 구조, 선택 구조, 반복 구조가 있다. <br> 
+순차 구조는 일반적인 구조로서, 입력한 코드를 그대로 실행하는 것.<br>
+선택 구조는 조건을 만족했을 때만 선택적으로 실행이 되는 구조. <br>
+반복구조는 동일한 명령이 반복되면서 실행되는 구조. 선택구조가 조건문, 반복구조가 반복문.<br>
+<br>
+<h4>1)조건문 </h4>
+<p> <strong>-If 문의 기본구조</strong>
+: ‘if condition’의 형태로 쓰이며 condition은 반드시 Boolean형(true/false)이어야 한다.<br>
+그래서 condition에는 비교연산자(<,>), 논리연산자(and, or,,)가 주로 사용된다. </p>
+
+<p><strong>-들여쓰기의 의미</strong>
+: 들여쓰기를 한 문장은 if문의 영향을 받는 것으로 인식한다.<br>
+그래서 if문에 해당하는 모든 문장들에는 같은 크기의 들여쓰기를 해야한다.<br>
+이는 if 뿐만 아니라 for(반복)/def(함수) 등에도 모두 적용된다.</p>
+
+<p><strong>-조건문 선택</strong>
+: if문, if-else문, if-elif-else문 등이 있는데 각각 1개, 2개, 3개의 조건을 달 수 있는 것이다.<br>
+단순 if문은 조건에 맞을 때만 실행되고 아니면 아무 실행도 하지 않는다. </p>
+
+<p><strong>-‘if-else문’ 기본 구조</strong>
+: else문은 if문과 별개로 사용할 수 없다. </p>
+
+<p><strong>-‘if-elif-else문’ 기본 구조</strong>
+: elif는 개수 제한이 없음. 여러 개 사용할 수 있다. <br>
+위에서부터 아래로 내려오면서 조건을 충족하는 elif가 있을 경우에는 밑으로 더 내려가지 않는다. </p>
+
+ 
+ 
+</p> <br>
+
+
+
+
+
+<h2>2)반복문</h2>
+
+<p><strong>-반복문X자료구조</strong>
+: 반복문과 자료구조(특히 list)는 잘 어울린다. <br>
+목적에 맞게 하나의 속성(엑셀에서의 column)으로 저장된 데이터(나이, 부서이름, 직원이름 등등)가 중요하다.</p>
+ 
+
+<p><strong>-For문</strong>
+: 기본구조는 ‘for 변수 in 리스트’이다. <br>
+꼭 리스트가 아닌 이와 유사한 자료구조도 가능(튜플, 문자열 등). 변수 자리에는 자료구조 안 데이터를 어떤 변수로 지정할 것인지 나타낸다.</p>
+ 
+
+<p><strong>-For문 사용법</strong>
+: any_list = [0, 1, 2, 3, 4]<br>
+For val in any_list:                     <br>      
+  Print(val)         <br>
+을 입력하면 5번 반복하면서 0, 1, 2, 3, 4가 순서대로 출력된다. 리스트의 길이가 5이기 때문에 총 5회 반복하는 것.<br> 
+New_list[10, 30, 20]<br>
+For val in nuw_list:<br>
+  New_value = value*2<br>
+  Print(new_value)<br>
+를 입력하면 결과는 20, 60, 40으로 출력된다. </p>
+
+
+<p><strong>-for문 x 외부변수</strong>
+: list_numbers = [2, 4, 6, 8]<br>
+Total num = 0<br>
+For x in list_numbers: <br>
+	Total_num = total_num+x<br>
+	Print(x, total)<br>
+를 입력하면 계속 반복하면서 더해진다. 그래서 2, 6, 12, 20이 출력된다. </p>
+
+
+
+
+<p><strong>-for문 X 리스트</strong>
+: 리스트와 for문을 이용해서 새로운 값으로 채워진 list 만들기
+List_upper = [‘A’, ‘B’, ‘C’]   -> 3회 반복임을 알 수 있다. 
+List_lower = [ ]
+For alp in list_upper: 
+	List_lower.append(alp.lower())
+	Print(list_lower)
+를 입력하면 첫 반복때는 list_lower에 ‘a’가 추가되고, 세번째 반복 때는 alp가 ‘C’를 가리키고, ‘c’가 list_lower에 추가된다. 
+<strong>-for문 – range()함수
+: range함수는 등차수열로 값이 채워진 리스트와 유사한 형태의 자료구조를 만드는 함수. Slicing과 굉장히 유사. input으로는 stop, start, step이 있고, 각각 그 전에 마침, 그 숫자에서 출발, 그 숫자가 등차인 것을 의미한다. Range(5)의 경우 input이 하나이므로 5가 stop을 의미하고 원소로는 0~4이므로 5회 반복실행하는 것이다. 
+<strong>-Skip, Stop
+For문 도중 continue를 만나면 나머지 코드 skip하고 다음 반복문으로 진행하고, break는 아예 빠져나오면 된다. Continue는 해당 iteration만 빠져나온다.
+
+
+</p> <br>
+
+  <h2>3) 함수</h2>
+<p><strong>-함수의 구조(1)</strong>
+Def func_name(param1, param2): <br>
+	Val = algorithm<br>
+	Return value<br>
+의 구조. Def는 함수를 정의하겠다는 뜻이고, func_name에는 함수의 이름을 적어준다. <br>
+Param1, param2 등은 input이다. Val = algorithm에는 함수가 수행할 일을 적어준다. <br>
+<br>
+하나 더 보자. <br>
+<br>
+Def square(x)<br>
+	Y = x*x              -->선언<br>
+	Return y <br>
+C = square(3)          --> 호출<br>
+의 구조. 선언 시 square의 함수는 변수 x를 input으로 갖게 되고, 호출 시 입력한 3은 자동적으로 x = 3의 구조를 거친다.<br>
+return되는 output 값은 선언 시 지정한 알고리즘에 따라 y = x*x를 거쳐 결과값이 나온다. <br>
+결국 c = 9로 연산이 일어난다. C에 9가 할당되는 것. <br>
+만약 c라는 변수에 할당시키지 않았다면 그냥 내부적인 계산만 일어나고 아무런 소용이 없다. 추후 사용할 경우 변수(c 등)에 꼭 할당시키기. 
+</p>
+  
+<p><strong>-함수의 구조(2)</strong>
+: 두 값을 더하는 함수. <br>
+Def sum_two(a, b): <br>
+	Val = a+b          --> 선언 <br>
+	Return val<br>
+C = sum_two(3, 12)   --> 호출 <br>
+의 구조. Input이 전과 다르게 두개인 것을 확인. 두 변수 중 먼저 쓰인 것을 a, 나중을 b라 한다.<br>
+그리고 output값은 val로 할 것임을 선언하고 있다. 호출 과정에서 C에는 15가 할당된다. 
+</p>
+  
+<p><strong>-함수의 구조(3) </strong>
+: 이번 함수는 input값이 필요없는 함수. 따라서 output도 없다.<br>
+Def hello_world():          -->선언<br>
+	Print(“hello, world!”)   
+Hello_world()                -->호출 <br>
+의 구조. 알고리즘도 없고, 그냥 출력만 한다. <br>
+</p>
+  
+<p><strong>-함수의 구조(4) </strong>
+: def func(x):   <br>
+	Print(“x = “ + str(x))<br>
+Func(5)<br>
+로 정의된 함수는 return값(output)이 없다. 그냥 input을 받아서 화면에 출력하는 함수. 
+  </p>
+
+
+</body>
+</html>
